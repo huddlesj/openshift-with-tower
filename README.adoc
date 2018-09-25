@@ -1,0 +1,5 @@
+# Managing OpenShift Clusters using Ansible Tower
+
+1. Set up an link:https://docs.ansible.com/ansible-tower/latest/html/userguide/inventories.html#id9[OpenStack Inventory].
+2. Create a repo like this one.
+
