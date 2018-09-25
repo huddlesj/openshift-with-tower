@@ -15,9 +15,7 @@ vmware_tag_Ansible_Tags_vmware_tag_master
 [etcd:children]
 meta-host-type_master
 vmware_tag_Ansible_Tags_vmware_tag_master
-
-# multi_group: (group_names|intersection(['meta-host-type_master', 'vmware_tag_Ansible_Tags_vmware_tag_cluster_dev1']))|length >= 1
-# meta-host-type_etcd
+meta-host-type_etcd
 
 [nodes:children]
 masters
