@@ -9,10 +9,10 @@ etcd
 
 # Host Groups
 [masters:children]
-meta-host-type_master
+meta-host-type_master:&vmware_tag_Ansible_Tags_vmware_tag_cluster_dev1
 
 [etcd:children]
-meta-host-type_master
+meta-host-type_master:&vmware_tag_Ansible_Tags_vmware_tag_cluster_dev1
 # meta-host-type_etcd
 
 [nodes:children]
@@ -21,16 +21,17 @@ infra_hosts
 app_hosts
 
 [infra_hosts:children]
-meta-openshift_node_group_name_node-config-infra
+meta-openshift_node_group_name_node-config-infra:&vmware_tag_Ansible_Tags_vmware_tag_cluster_dev1
 
 [app_hosts:children]
-meta-openshift_node_group_name_node-config-compute
+meta-openshift_node_group_name_node-config-compute:&vmware_tag_Ansible_Tags_vmware_tag_cluster_dev1
 
 [meta-host-type_master]
 [meta-host-type_etcd]
 [meta-host-type_cns]
 [meta-openshift_node_group_name_node-config-infra]
 [meta-openshift_node_group_name_node-config-compute]
+[vmware_tag_Ansible_Tags_vmware_tag_cluster_dev1]
 
 [seed-hosts:children]
 masters
