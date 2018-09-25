@@ -21,10 +21,10 @@ infra_hosts
 app_hosts
 
 [infra_hosts:children]
-meta-openshift_node_group_name_node-config-infra:&vmware_tag_Ansible_Tags_vmware_tag_cluster_dev1
+meta-openshift_node_group_name_node-config-infra
 
 [app_hosts:children]
-meta-openshift_node_group_name_node-config-compute:&vmware_tag_Ansible_Tags_vmware_tag_cluster_dev1
+meta-openshift_node_group_name_node-config-compute
 
 [meta-host-type_master]
 [meta-host-type_etcd]
@@ -32,6 +32,7 @@ meta-openshift_node_group_name_node-config-compute:&vmware_tag_Ansible_Tags_vmwa
 [meta-openshift_node_group_name_node-config-infra]
 [meta-openshift_node_group_name_node-config-compute]
 [vmware_tag_Ansible_Tags_vmware_tag_cluster_dev1]
+[meta-host-type_master:&vmware_tag_Ansible_Tags_vmware_tag_cluster_dev1]
 
 [seed-hosts:children]
 masters
