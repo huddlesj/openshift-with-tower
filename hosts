@@ -39,6 +39,7 @@ vmware_tag_Ansible_Tags_vmware_tag_node
 [meta-openshift_node_group_name_node-config-compute]
 [vmware_tag_Ansible_Tags_vmware_tag_cluster_dev1]
 [vmware_tag_Ansible_Tags_vmware_tag_master]
+[vmware_tag_Ansible_Tags_vmware_tag_node]
 
 [seed-hosts:children]
 masters
