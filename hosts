@@ -1,3 +1,4 @@
+---
 
 [cluster_hosts:children]
 OSEv3
@@ -13,13 +14,12 @@ vmware_tag_Ansible_Tags_vmware_tag_master
 
 [etcd:children]
 vmware_tag_Ansible_Tags_vmware_tag_master
-# meta-host-type_master
-# meta-host-type_etcd
+
 
 [nodes:children]
-masters
-infra_hosts
-app_hosts
+vmware_tag_Ansible_Tags_vmware_tag_infra
+vmware_tag_Ansible_Tags_vmware_tag_node
+vmware_tag_Ansible_Tags_vmware_tag_master
 
 [infra_hosts:children]
 vmware_tag_Ansible_Tags_vmware_tag_infra
@@ -30,6 +30,7 @@ vmware_tag_Ansible_Tags_vmware_tag_node
 [vmware_tag_Ansible_Tags_vmware_tag_master]
 [vmware_tag_Ansible_Tags_vmware_tag_infra]
 [vmware_tag_Ansible_Tags_vmware_tag_node]
+
 
 [seed-hosts:children]
 masters
