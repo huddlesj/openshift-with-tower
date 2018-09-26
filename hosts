@@ -1,5 +1,3 @@
----
-
 [cluster_hosts:children]
 OSEv3
 
