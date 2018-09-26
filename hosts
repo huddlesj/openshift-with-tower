@@ -1,4 +1,4 @@
-cluster_hosts:children]
+[cluster_hosts:children]
 OSEv3
 
 [OSEv3:children]
