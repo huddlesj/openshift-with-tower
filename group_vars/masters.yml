@@ -1,7 +1,0 @@
----
-
-openshift_node_group_name: 'vmware_tag_Ansible_Tags_vmware_tag_master'
-
-openshift_node_open_ports:
-- service: "prometheus node exporter"
-  port: "9100/tcp"
