@@ -32,3 +32,4 @@ vmware_tag_Ansible_Tags_vmware_tag_node
 
 [seed-hosts:children]
 masters
+vmware_tag_Ansible_Tags_vmware_tag_master
