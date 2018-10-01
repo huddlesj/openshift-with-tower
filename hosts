@@ -26,12 +26,8 @@ vmware_tag_Ansible_Tags_vmware_tag_infra
 vmware_tag_Ansible_Tags_vmware_tag_node
 
 [vmware_tag_Ansible_Tags_vmware_tag_master]
-keepme
 [vmware_tag_Ansible_Tags_vmware_tag_infra]
-keepme
 [vmware_tag_Ansible_Tags_vmware_tag_node]
-keepme
-[keepme]
 
 [seed-hosts:children]
 masters
